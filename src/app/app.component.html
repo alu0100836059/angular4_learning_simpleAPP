@@ -2,12 +2,12 @@
   <h1>Item's list</h1>
   <div class="addItem">
     <input [(ngModel)] = "newItem" placeholder="Add Item" class="addText">
-    <button (click) = "pushItem()">Add</button>
+    <button (click) = "pushItem()" type = "submit">Add</button>
   </div>
-  <ul *ngFor = "let i of items">
+  <ul *ngFor = "let i of items; let pos = index">
     <li>
       {{i}}
-      <span>X</span>
+      <span (click) = "removeItem(pos)">X</span>
     </li>
   </ul>
 </div>
