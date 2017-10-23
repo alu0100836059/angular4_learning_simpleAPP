@@ -52,7 +52,8 @@ li {
   border-bottom: 1px solid #bfbfbf;
   background-color: #d7d7d7;
   padding: 10px 0px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+  margin-top: 1px;
 }
 
 span {
@@ -60,5 +61,5 @@ span {
   position: relative;
   float: right;
   margin-right: 10px;
-  
+
 }

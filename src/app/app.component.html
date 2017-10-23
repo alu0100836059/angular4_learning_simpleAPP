@@ -1,13 +1,13 @@
 <div class="main">
   <h1>Item's list</h1>
   <div class="addItem">
-    <input class="addText" placeholder="Add Item">
-    <button>Add</button>
+    <input [(ngModel)] = "newItem" placeholder="Add Item" class="addText">
+    <button (click) = "pushItem()">Add</button>
   </div>
-  <ul>
+  <ul *ngFor = "let i of items">
     <li>
-      abc
-      <span>x</span>
+      {{i}}
+      <span>X</span>
     </li>
   </ul>
 </div>
